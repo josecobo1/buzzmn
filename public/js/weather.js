@@ -36,7 +36,7 @@ const apiCall = async (queryString) => {
         const data = await response.json();
 
         if (data) {
-            console.log(data);
+            // console.log(data);
 
             renderResults(data);
         }
