@@ -1,0 +1,35 @@
+@import "~bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons";
+
+.fade-in-animation {
+    animation: fadeIn 2s;
+}
+
+.bigger-spinner {
+    width: 5rem;
+    height: 5rem;
+}
+
+.xl-text {
+    font-size: 7rem;
+}
+
+.btn-orange {
+    background-color: #ec6e4c;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        color: #ec6e4c;
+        border: 1px solid #ec6e4c;;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
