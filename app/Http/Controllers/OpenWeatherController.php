@@ -16,20 +16,6 @@ class OpenWeatherController extends Controller
 
         $params = $request->all();
 
-       return Http::openweather($params)->get('/data/2.5/weather')->throw()->json();
-        // try {
-
-        //     if ($response->clientError()) {
-        //         Log::error('Se ha producido un error en la petición error 4**');
-        //         Log::error($response);
-        //     }
-
-        //     return response()->json($response->json(), 200);
-        // } catch (RequestException $exception) {
-        //     Log::error('Se ha producido un error 5**');
-        //     Log::error($exception);
-
-        //     abort(404, 'No se ha podido realizar la consulta.');
-        // }
+        return Http::openweather($params)->get('/data/2.5/weather')->throw()->json();
     }
 }
